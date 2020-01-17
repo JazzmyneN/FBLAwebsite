@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wyvern Airlines</title>
+    <script src="https://kit.fontawesome.com/ca678b4077.js" crossorigin="anonymous"></script>
+    <link href="reset.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="logoHeader">
+        <div class="headerLogo">
+            <img src="wyvrenairlinestransparent.png">
+        </div>
+        <div class="headerText">
+            <h1 class="animate">Wyvern Airlines</h1><br />
+
+        </div>
+    </div>
+
+    <div class="mainBody">
+        <div class="bodyContainer">
+            <div class="navbar">
+                <li></li>
+                <li><a href="">Book Flight</a></li>
+                <li><a href="">Frequent Flyers</a></li>
+                <li><a href="">Job Opportunities</a></li>
+            </div>
+
+            <div class="bodyContainer2">
+                <div class="flightForm">
+                    <form>
+                        <fieldset>
+                            <input type="radio" name="tripType" id="round" value="Round Trip" checked><label
+                                for="round">Round-Trip</label><br />
+                            <span class="checkmark"></span>
+                            <input type="radio" name="tripType" id="one"><label for="one">One Way</label><br />
+                            <span class="checkmark"></span>
+                            <input type="radio" name="tripType" id="multi"><label for="multi">Multi-City</label>
+                            <span class="checkmark"></span>
+                        </fieldset>
+                        <div class="peopleSettings">
+                            <div class="labelPeople">
+                                <li>Adults (18-64)</li>
+                                <li>Senior (65+)</li>
+                                <li>Youth (12-17)</li>
+                                <li>Child (2-11)</li>
+                                <li>Infant (0-2)</li>
+                            </div>
+                            <div class="buttonPeople">
+                                <button onclick="minusFrom()">-</button><span id="value">0</span><button
+                                    onclick="addTo()">+</button><br />
+                                <button onclick="minusFrom()">-</button><span id="value">0</span><button
+                                    onclick="addTo()">+</button><br />
+                                <button onclick="minusFrom()">-</button><span id="value">0</span><button
+                                    onclick="addTo()">+</button><br />
+                                <button onclick="minusFrom()">-</button><span id="value">0</span><button
+                                    onclick="addTo()">+</button><br />
+                                <button onclick="minusFrom()">-</button><span id="value">0</span><button
+                                    onclick="addTo()">+</button>
+                            </div>
+                        </div>
+                        <fieldset>
+                            <input id="econ" type="radio" name="seating" value="Economy" checked><label
+                                for="econ">Economy</label><br />
+                            <input id="prem" type="radio" name="seating" value="Premium"><label
+                                for="prem">Premium</label><br />
+                            <input id="buis" type="radio" name="seating" value="buis"><label
+                                for="buis">Business</label><br />
+                            <input id="first" type="radio" name="seating" value="first"><label
+                                for="first">First</label><br />
+                            <input id="multi" type="radio" name="seating" value="multi"><label for="multi">Multi</label>
+                        </fieldset>
+                    </form>
+
+                    <div class="searchBar">
+                        <input type="text" placeholder="From...">
+                        <button onclick="switchValue()"><i class="fas fa-exchange-alt"></i></button>
+                        <input type="text" placeholder="To...">
+                        <input type="date" placeholder="When...">
+                        <button onclick="searchFlight()"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+
+                
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
