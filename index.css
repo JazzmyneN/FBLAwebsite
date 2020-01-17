@@ -1,106 +1,11 @@
-@import url(https://fonts.googleapis.com/css?family=Baskervville&display=swap);
-
-html {
-  box-sizing: border-box;
-  font-family: Roboto, sans-serif
-}
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300i,400&display=swap');
 
 body {
-  background-image: url(https://images.unsplash.com/photo-1514315153150-cd7d8d716178?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
-  background-size: cover
+  box-sizing: border-box; 
+  background-color: rgb(247, 247, 247);
 }
-
-.logoHeader {
-  font-family: Roboto, sans-serif;
-  display: flex;
-  align-items: center;
-  z-index: 2;
-  padding-left: 15em;
-  padding-top: 6em;
-  position: absolute;
-  transition: .2s
-}
-
-.logoHeader h1 {
-  font-family: Baskervville, serif;
-  margin-top: -125px;
-  margin-left: 150px;
-  color: #004268;
-  font-size: 55pt;
-  font-weight: 400;
-  animation: bouncy1 .7s 1 0s linear
-}
-
-.headerLogo img {
-  margin-top: -85px;
-  width: 275px;
-  height: 275px;
-  margin-left: 50px;
-  animation: bouncy2 .5s 1 0s linear
-}
-
-.mainBody {
-  z-index: 1;
-  display: flex
-}
-
-.navbar {
-  display: flex;
-  list-style: none;
-  position: absolute;
-  right: 0;
-  top: -40px
-}
-
-.navbar a {
-  font-weight: 300;
-  font-family: Roboto, sans-serif;
-  text-decoration: none;
-  font-size: 17pt;
-  color: #004769;
-  transition: border-bottom .2s
-}
-
-.navbar a:hover {
-  border-bottom: 1.2px solid #000
-}
-
-.navbar li {
-  background-color: #e6f7ff;
-  padding: 11px 2.5em
-}
-
-.navbar li:first-of-type {
-  background: #e6f7ff;
-  content: "";
-  clip-path: polygon(100% 0, 39% 100%, 100% 100%)
-}
-
-.navbar li:nth-of-type(2) {
-  background: #e6f7ff
-}
-
-.navbar li:nth-of-type(3) {
-  background: #dbf4ff
-}
-
-.navbar li:nth-of-type(4) {
-  background: #cff0ff;
-  border-top-right-radius: 10px
-}
-
-.bodyContainer {
-  position: absolute;
-  bottom: 0;
-  background-color: #e6f7ff;
-  height: 75%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  width: 75%;
-  border-top-left-radius: 10px
-}
-
+/*HEADER STYLES*/
 body::-webkit-scrollbar {
   width: 7px;
   background-color: #f5f5f5
@@ -110,33 +15,121 @@ body::-webkit-scrollbar-thumb {
   background-color: #4b4b4b
 }
 
-.bodyContainer2 {
-  padding: 4em 1em;
-  margin: 10px auto
+.transparent {
+  opacity: 0;
 }
-
-.flightForm {
-  width: 75%;
-  background: #fff;
-  font-size: 1.5em
-}
-
-.flightForm>form {
+header {  
+  margin-left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  font-family: 'Libre Baskerville', serif;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center
+  align-items: center;
+  padding: 20px 20px;
+}
+
+header img {
+  opacity: 0;
+  width: 325px;
+  height: 325px;
+  animation-name: slideLEFT;
+  animation-duration: 0.6s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+
+  -webkit-animation-name: slideLEFT;
+  -webkit-animation-duration: 0.6s;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+}
+header h2 {
+  opacity: 0;
+  animation-name: slideLEFT;
+  animation-duration: 0.6s;
+  animation-timing-function: ease;
+  animation-delay: 0.75s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+
+  
+
+  font-size: 2.75em;
+  font-family: 'Source Sans Pro';
+  font-weight: 300;
+  font-style: italic;
+}
+header h1 {
+  opacity: 0;
+  font-size: 4em;
+  color: rgb(70, 70, 70);
+
+  animation-name: slideLEFT;
+  animation-duration: 0.6s;
+  animation-timing-function: ease;
+  animation-delay: 0.5s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+
+}
+h2 {
+  padding: 20px 0px;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 2em;
+  color: rgb(70, 70, 70);
+}
+hr {
+  margin: 1em 0em;
+  width: 25%;
+}
+
+/*main container*/
+.mainContainer {
+  animation: slideUp ease 1s;
+  -webkit-animation: slideUP ease 1s;
+  margin: 0px auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 1000px;
+}
+/*flight form styles*/
+.flightForm {
+  margin-top: 10px;
+  width: 50%;
+  background: #fff;
+  border-radius: 15px;
+}
+.flightForm>form {
+  padding: 20px 0px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.25em;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid #e4e4e4;
+  list-style: none;
 }
 
 .flightForm input[type=radio] {
   opacity: 0;
   position: fixed;
-  width: 0
+  width: 0;
+  
 }
 
 .flightForm label {
   width: 125px;
   margin-top: 10px;
-  font-weight: 300;
   display: inline-block;
   background-color: #ececec;
   padding: 2px 5px;
@@ -146,14 +139,14 @@ body::-webkit-scrollbar-thumb {
 
 .flightForm input[type=radio]:checked+label,
 .flightForm input[type=radio]:focus+label {
-  border-left: 2px solid #44a1cc;
-  background-color: #cafbff
+  border-left: 3px solid #44a1cc;
+  background-color: #cff0ff
 }
 
 .peopleSettings {
   display: flex;
   align-items: stretch;
-  font-weight: 300
+  font-weight: 300;
 }
 
 .labelPeople li {
@@ -167,23 +160,28 @@ body::-webkit-scrollbar-thumb {
   border: none;
   border-radius: 50px;
   padding: 0 2px;
-  margin: 6px 10px;
+  margin: 3.5px 5px;
   font: inherit;
   cursor: pointer;
   outline: inherit;
   color: #004769;
-  width: 25px
+  width: 25px;
+  height: 25px;
 }
 
+/*SEARCH BAR STYLES*/
 .searchBar {
-  font-size: 1.4em;
+  font-family: 'Source Sans Pro', sans-serif;
+  border: 1px solid #e4e4e4;
+  width: 50%;
+  font-size: 1.5em;
   display: flex;
   justify-content: space-around;
-  margin: 0 auto;
+ 
   background-color: #fff;
-  padding: 10px 5px;
-  margin-top: 10px;
-  border-radius: 10px 50px 50px 10px
+  padding: 10px 0px;
+
+  border-radius: 15px 50px 50px 15px;
 }
 
 .fas {
@@ -191,6 +189,7 @@ body::-webkit-scrollbar-thumb {
   padding: 10px;
   border-radius: 50px;
   color: #004769
+  
 }
 
 .searchBar button .fas {
@@ -211,7 +210,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .searchBar input[type=date],
-.searchBar input[type=text] {
+.searchBar input[type=text] { 
+ 
   width: 25%;
   background: 0 0;
   font: inherit;
@@ -219,75 +219,58 @@ body::-webkit-scrollbar-thumb {
   font-size: .7em;
   border-bottom: 2px solid #004769
 }
-
-.flightForm {
-  padding: 10px 5px;
-  margin: 5px auto;
-  border-radius: 10px 50px 50px 10px;
-  list-style: none
+::-webkit-input-placeholder {
+   color: #004769;
 }
+/*nav styles*/
+nav {
+  position: fixed;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  border-right: 1px solid rgb(167, 167, 167);
+  margin-top: 10%;
+  margin-left: 22%;
+  transform: translateX(-75%);
 
-@keyframes bouncy1 {
-
-  60%,
-  75%,
-  90%,
-  from,
-  to {
-    -webkit-animation-timing-function: cubic-bezier(.215, .61, .355, 1);
-    animation-timing-function: cubic-bezier(.215, .61, .355, 1)
-  }
-
-  0% {
+}
+ nav  li{
+   width: 250px;
+  padding: 10px 10px;
+}
+ nav li a {
+   text-decoration: none;
+   color: rgb(70, 70, 70);
+   font-family: 'Source Sans Pro';
+   font-size: 1.75em;
+   transition: all .5s;
+}
+nav li:hover {
+  background-color:rgb(124, 124, 124) ;
+  
+}
+nav a:hover {
+  color: white;
+}
+/* animations */
+@keyframes slideLEFT {
+  0%{
     opacity: 0;
-    -webkit-transform: translate3d(-3000px, 0, 0);
-    transform: translate3d(-3000px, 0, 0)
-  }
+    transform: translateX(-1000px);
 
-  60% {
-    opacity: 1;
-    -webkit-transform: translate3d(25px, 0, 0);
-    transform: translate3d(25px, 0, 0)
   }
-
-  75% {
-    -webkit-transform: translate3d(-10px, 0, 0);
-    transform: translate3d(-10px, 0, 0)
-  }
-
-  90% {
-    -webkit-transform: translate3d(5px, 0, 0);
-    transform: translate3d(5px, 0, 0)
-  }
-
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0)
+  100%{
+    opacity: 100%;
   }
 }
-
-@keyframes bouncy2 {
-  from {
+@keyframes slideUP {
+  0%{
     opacity: 0;
-    -webkit-transform: scale(.1) rotate(30deg);
-    transform: scale(.1) rotate(30deg);
-    -webkit-transform-origin: center bottom;
-    transform-origin: center bottom
-  }
+    transform: translateY(1000px);
 
-  50% {
-    -webkit-transform: rotate(-10deg);
-    transform: rotate(-10deg)
   }
-
-  70% {
-    -webkit-transform: rotate(3deg);
-    transform: rotate(3deg)
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: scale(1);
-    transform: scale(1)
+  100%{
+    opacity: 100%;
   }
 }
