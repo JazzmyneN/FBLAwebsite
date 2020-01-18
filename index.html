@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="https://foollovers.com/mat/i-s-twelve/m02.gif">
     <script src="https://kit.fontawesome.com/ca678b4077.js" crossorigin="anonymous"></script>
-    <script src="formScript.js" defer></script>
+    <script src="scroll.js" defer></script>
     <link href="reset.css" rel="stylesheet">
     <link href="index.css" rel="stylesheet">
     <title>Dragon Airlines</title>
@@ -37,7 +37,7 @@
         <hr />
         <div class="searchBar">
             <input type="text" placeholder="From...">
-            <button onclick="switchValue()"><i class="fas fa-exchange-alt"></i></button>
+            <button onclick = "switchValue()"><i class="fas fa-exchange-alt"></i></button>
             <input type="text" placeholder="To...">
             <input type="date" placeholder="When...">
             <button onclick="searchFlight()"><i class="fas fa-search"></i></button>
@@ -62,16 +62,16 @@
                         <li>Infant (0-2)</li>
                     </div>
                     <div class="buttonPeople">
-                        <button onclick="minusFrom()">-</button><span id="value1">0</span><button
-                            onclick="addTo()">+</button><br />
-                        <button onclick="minusFrom()">-</button><span id="value2">0</span><button
-                            onclick="addTo()">+</button><br />
-                        <button onclick="minusFrom()">-</button><span id="value3">0</span><button
-                            onclick="addTo()">+</button><br />
-                        <button onclick="minusFrom()">-</button><span id="value4">0</span><button
-                            onclick="addTo()">+</button><br />
-                        <button onclick="minusFrom()">-</button><span id="value5">0</span><button
-                            onclick="addTo()">+</button>
+                        <button onclick="minusFrom(1);return false;">-</button><span id="value1">0</span><button
+                            onclick="addTo(1);return false;">+</button><br />
+                        <button onclick="minusFrom(2);return false;">-</button><span id="value2">0</span><button
+                            onclick="addTo(2);return false;">+</button><br />
+                        <button onclick="minusFrom(3);return false;">-</button><span id="value3">0</span><button
+                            onclick="addTo(3);return false;">+</button><br />
+                        <button onclick="minusFrom(4);return false;">-</button><span id="value4">0</span><button
+                            onclick="addTo(4);return false;">+</button><br />
+                        <button onclick="minusFrom(5);return false;">-</button><span id="value5">0</span><button
+                            onclick="addTo(5);return false;">+</button>
                     </div>
                 </div>
                 <fieldset>
