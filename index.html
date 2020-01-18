@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,29 +8,33 @@
     <link rel="icon" href="https://foollovers.com/mat/i-s-twelve/m02.gif">
     <script src="https://kit.fontawesome.com/ca678b4077.js" crossorigin="anonymous"></script>
     <script src="formScript.js" defer></script>
-    <link href  = "reset.css" rel = "stylesheet">
-    <link href  = "index.css" rel = "stylesheet">
+    <link href="reset.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
     <title>Dragon Airlines</title>
-   
+
 </head>
+
 <body>
-    <header id = "header">
+    <header id="header">
         <nav>
-            <li><a href = "index.html">Home</a></li>
-            <li><a href = "job.html">Job Opportunities</a></li>
-            <li><a href = "frequent.html">Frequent Flyers</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="job.html">Job Opportunities</a></li>
+            <li><a href="frequent.html">Frequent Flyers</a></li>
         </nav>
-        <img id = "logo" src = "wyvrenairlinestransparent.png"/>
-        <div class = "headerText">
+        <img id="logo" src="wyvrenairlinestransparent.png" />
+        <div class="headerText">
             <h1>Dragon Airlines</h1>
             <h2>Fly on the wings of a dragon</h2>
         </div>
     </header>
-    
-    <div class = "mainContainer">
-        
+
+    <div class="mainContainer">
+        <h2>About Us</h2>
+        <hr />
+        <p><img style = "width: 250px; height: 250px; float: right; border-radius: 15px; padding: 5px;" src = "plane.png">Hello and welcome to Dragon Airlines!   We're the premier discount airline service, here to provide a smooth experience at half the price of a normal airline. No need to deal with long lines and slow receptionist, our entire process is online! All you need to do and show up and enjoy the ride. We hope you enjoy your time working with us.</p>
+
         <h2>Book Your Next Flight</h2>
-        <hr/>
+        <hr />
         <div class="searchBar">
             <input type="text" placeholder="From...">
             <button onclick="switchValue()"><i class="fas fa-exchange-alt"></i></button>
@@ -72,24 +77,60 @@
                 <fieldset>
                     <input id="econ" type="radio" name="seating" value="Economy" checked><label
                         for="econ">Economy</label><br />
-                    <input id="prem" type="radio" name="seating" value="Premium"><label
-                        for="prem">Premium</label><br />
-                    <input id="buis" type="radio" name="seating" value="buis"><label
-                        for="buis">Business</label><br />
-                    <input id="first" type="radio" name="seating" value="first"><label
-                        for="first">First</label><br />
+                    <input id="prem" type="radio" name="seating" value="Premium"><label for="prem">Premium</label><br />
+                    <input id="buis" type="radio" name="seating" value="buis"><label for="buis">Business</label><br />
+                    <input id="first" type="radio" name="seating" value="first"><label for="first">First</label><br />
                     <input id="multi" type="radio" name="seating" value="multi"><label for="multi">Multi</label>
                 </fieldset>
             </form>
-            
+
         </div>
-        <h2>Popular Flights Near You</h2>
-        <hr/>
+        <h2>Flight Schedule</h2>
+        <hr />
+        <table>
+            <tbody>
+                <thead>
+                    <th>Departure</th>
+                    <th>Destination</th>
+                    <th>Flight #</th>
+                    <th>Status</th>
+                    <th>Time</th>
+                </thead>
+                <tr>
+                    <td>7:35 AM</td>
+                    <td>New York</td>
+                    <td>AB-1029</td>
+                    <td>On Time</td>
+                    <td>7:45 AM</td>
+                </tr>
+                <tr>
+                    <td>7:45 AM</td>
+                    <td>New York</td>
+                    <td>DE-2454</td>
+                    <td>On Time</td>
+                    <td>7:55 AM</td>
+                </tr>
+                <tr>
+                    <td>7:55 AM</td>
+                    <td>San Diego</td>
+                    <td>QK-2318</td>
+                    <td>Delayed</td>
+                    <td>8:05 AM</td>
+                </tr>
+                <tr>
+                    <td>8:00 AM</td>
+                    <td>Boston</td>
+                    <td>UO-1238</td>
+                    <td>On Time</td>
+                    <td>8:35 AM</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
     <footer>
-        <div class = "footerContainer">
+        <div class="footerContainer">
             <p>Made by Dylan Grant and Jazzmyne Nixon</p>
-            <div class = "icons">
+            <div class="icons">
                 <i class="fab fa-facebook-square"></i>
                 <i class="fab fa-twitter-square"></i>
                 <i class="fab fa-instagram"></i>
@@ -97,4 +138,5 @@
         </div>
     </footer>
 </body>
+
 </html>

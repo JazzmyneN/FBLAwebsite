@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300i,400&display=swap');
-
+html {
+  background-image: url(cloud.png) fixed;
+    background-size: contain;
+    background-size: cover;
+    background-position: center;
+}
 body {
   box-sizing: border-box; 
   background-color: rgb(247, 247, 247);  
@@ -18,7 +23,11 @@ body::-webkit-scrollbar {
   background-color: #f5f5f5;
 
 }
-
+p {
+  font-size: 1.5em;
+  font-family: 'Source Sans Pro';
+  padding: 0em 7em;
+}
 body::-webkit-scrollbar-thumb {
   background-color: #4b4b4b
 }
@@ -263,9 +272,7 @@ nav li:hover {
   background-color:#cff0ff ;
   border-right: 1px solid rgb(124, 170, 255);
 }
-nav a:hover {
-  
-}
+
 /* animations */
 @keyframes slideLEFT {
   0%{
@@ -322,4 +329,19 @@ footer .fab {
 }
 footer p {
   font-size: 1.5em;
+}
+/*table styles */
+td, th {
+  border: 1px solid #999; 
+  background-color: white;
+  padding: 1.25rem;
+  font-size: 1.5em;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+th {
+  background-color: #cff0ff;
+}
+table {
+ 
+  border-radius: 15px;
 }
