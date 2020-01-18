@@ -1,0 +1,68 @@
+#signup{
+    display: flex;
+}
+div.mainContainer{
+    display: flex;
+}
+.mainContainer h2{
+    text-align: center;
+}
+ul li{
+    font-size: 1.5em ;
+}
+h3{
+    font-size: 1.7em;
+}
+#r1{
+    background-color: rgba(113, 134, 155, 0.582);
+    margin: 10px 10px;
+    border-radius: 10px;
+    padding: 5px;
+    font-family: 'Source Sans Pro';
+}
+#r2{
+    float: none;
+    color: rgb(0, 3, 44);
+    background-color: rgba(43, 85, 128, 0.582);
+    margin: 10px 10px;
+    border-radius: 10px;
+    padding: 5px;
+    font-family: 'Source Sans Pro';
+}
+
+section h1{
+    font-size: 3em;
+}
+.topPart {
+    display: flex;
+}
+#rewards {
+    width: 50%;
+}
+#information {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-content: center;
+}
+#information img {
+width: 95%;
+border-radius: 15px;
+
+}
+p {
+   padding: 1em;
+}
+form {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Source Sans Pro';
+
+}
+label {
+    font-size: 1.3em;
+}
+input {padding: 1em;}
