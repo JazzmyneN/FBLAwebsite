@@ -3,12 +3,15 @@
 
 body {
   box-sizing: border-box; 
-  background-color: rgb(247, 247, 247);
+  background-color: rgb(247, 247, 247);  
+  overflow-x: hidden;
+
 }
 /*HEADER STYLES*/
 body::-webkit-scrollbar {
   width: 7px;
-  background-color: #f5f5f5
+  background-color: #f5f5f5;
+
 }
 
 body::-webkit-scrollbar-thumb {
@@ -19,13 +22,20 @@ body::-webkit-scrollbar-thumb {
   opacity: 0;
 }
 header {  
-  margin-left: 50%;
-  transform: translateX(-50%);
-  width: 60%;
+  background-image: url(https://images.unsplash.com/photo-1544766230-594734c916df?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjEyMDd9);
+
+
+  width: 100%;
   font-family: 'Libre Baskerville', serif;
   display: flex;
   align-items: center;
+  justify-content: center;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 20px 20px;
+  border-bottom: 1px solid gray;
 }
 
 header img {
@@ -68,7 +78,7 @@ header h2 {
 header h1 {
   opacity: 0;
   font-size: 4em;
-  color: rgb(70, 70, 70);
+  color: rgb(10, 0, 68);
 
   animation-name: slideLEFT;
   animation-duration: 0.6s;
@@ -83,7 +93,7 @@ h2 {
   padding: 20px 0px;
   font-family: 'Libre Baskerville', serif;
   font-size: 2em;
-  color: rgb(70, 70, 70);
+  color: rgb(10, 0, 68);
 }
 hr {
   margin: 1em 0em;
@@ -94,12 +104,12 @@ hr {
 .mainContainer {
   animation: slideUp ease 1s;
   -webkit-animation: slideUP ease 1s;
-  margin: 0px auto;
+  margin: 10px auto;
   width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 1000px;
+
 }
 /*flight form styles*/
 .flightForm {
@@ -229,15 +239,15 @@ nav {
   display: flex;
   flex-direction: column;
   list-style: none;
-  border-right: 1px solid rgb(167, 167, 167);
-  margin-top: 10%;
+  border-right: 1px solid rgb(189, 189, 189);
+  margin-top: 7%;
   margin-left: 22%;
   transform: translateX(-75%);
 
 }
  nav  li{
    width: 250px;
-  padding: 10px 10px;
+    padding: 10px 10px;
 }
  nav li a {
    text-decoration: none;
@@ -247,11 +257,11 @@ nav {
    transition: all .5s;
 }
 nav li:hover {
-  background-color:rgb(124, 124, 124) ;
-  
+  background-color:#cff0ff ;
+  border-right: 1px solid rgb(124, 170, 255);
 }
 nav a:hover {
-  color: white;
+  
 }
 /* animations */
 @keyframes slideLEFT {
@@ -273,4 +283,40 @@ nav a:hover {
   100%{
     opacity: 100%;
   }
+}
+
+/*footer styles*/
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  width: 100%;
+  height: 225px;
+ 
+  background: #8eaab8;
+  color: white;
+  font-family: 'Source Sans Pro';
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .fab {
+  color: white;
+  margin: 10px 20px;
+  padding: 20px;
+  font-size: 2em;
+  border: 2px solid white;
+  border-radius: 100px;
+  height: 30px;
+}
+.footerContainer {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+}
+footer p {
+  font-size: 1.5em;
 }
