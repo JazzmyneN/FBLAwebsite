@@ -11,7 +11,7 @@ body {
   box-sizing: border-box; 
   background-color: rgb(247, 247, 247);  
   overflow-x: hidden;
-  width: 65%;
+  width: 80%;
   margin: 0px auto;
   border: 1px solid gray;
   margin-top: 40px;
@@ -256,6 +256,7 @@ nav {
   list-style: none;
  
   text-align: right;
+ 
 
 }
  nav  li{
