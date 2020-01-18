@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300i,400&display=swap');
+html{
 
+  background: url(cloud.jpg) fixed;
+  background-size: contain;
+  background-size: cover;
+  background-position: center;
+
+
+}
 body {
   box-sizing: border-box; 
   background-color: rgb(247, 247, 247);  
@@ -246,6 +254,7 @@ nav {
   list-style: none;
  
   text-align: right;
+ 
 
 }
  nav  li{
