@@ -1,2 +1,2 @@
 # FBLAwebsite
-:) dylan and my project
+FBLA regional project
