@@ -1,7 +1,15 @@
 'use strict';
-function minusFrom() {
-    document.getElementById('value1').innerHTML -= 1;
+
+
+function minusFrom(number) {
+    var count = parseInt(document.getElementById("value" + number).textContent, 10) * 1;
+    count -= 1;
+    document.getElementById("value"+number).textContent = count;
 }
-function addTo() {
-    document.getElementById('value1').innerText += 1;
+function addTo(number) {
+    var count = parseInt(document.getElementById("value" + number).textContent, 10) *1;
+    count += 1;
+    document.getElementById("value"+number).textContent = count;
 }
+
+
